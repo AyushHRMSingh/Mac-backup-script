@@ -12,5 +12,6 @@ mkdir "$destinationfolder/$a"
 # copying files by iterating over list of files
 for folder in ${filelist[@]}
 do
-    cp -R "$folder" "$destinationfolder/$a"
+    echo $folder
+    cp -v -R "$folder" "$destinationfolder/$a"
 done
